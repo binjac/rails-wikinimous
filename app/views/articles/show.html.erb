@@ -1,0 +1,9 @@
+<h1><%= @article.title %></h1>
+<button type="button" class="btn btn-default navbar-btn" id="edit-article">
+  <%= link_to "Edit this article", edit_article_path %>
+</button>
+<div class="content"><%= @article.content %></div>
+<div>
+  <i class="fas fa-backward"></i>
+  <%= link_to "Back to list", articles_path %>
+</div>
